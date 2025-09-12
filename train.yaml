@@ -1,0 +1,5 @@
+path: ./dataset # 数据集根目录
+train: images # 训练集目录名
+val: val # 验证集目录名
+nc: 1 # 类别数
+names: [ 'logo' ] # 类别名称
