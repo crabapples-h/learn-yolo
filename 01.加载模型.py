@@ -1,5 +1,5 @@
 from ultralytics import YOLO
-
+# 文档https://docs.ultralytics.com/zh/
 # model = YOLO('models/yolov8n.pt')
 model = YOLO('models/yolov8x.pt')
 # model('./resources/01.png',show=True,save=True)
