@@ -2,3 +2,4 @@
 .idea
 yolo
 runs
+models/yolov8x.pt
