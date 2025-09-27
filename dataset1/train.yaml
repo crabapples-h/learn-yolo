@@ -4,7 +4,9 @@ val: valid/images # 验证集目录名
 task: pose #任务类型为 pose
 nc: 2 # 类别数
 loss: CIou
-names: ['left_hand', 'right_hand'] # 类别名称
+names:
+  0: 'left_hand'
+  1: 'right_hand'
 kpt_shape: [21, 3] # 关键点数量, 维度数量 (2 表示 x,y 或 3 表示 x,y,可见性)
 # 关键点
 flip_idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]

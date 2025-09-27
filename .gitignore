@@ -3,3 +3,4 @@
 yolo
 runs
 models/
+*.pt

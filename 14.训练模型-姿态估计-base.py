@@ -22,5 +22,5 @@ model = YOLO('models/yolov8n-pose.pt')
 # save_dir: 训练结果保存路径
 # weights: 预训练模型路径
 model.info()
-model.train(data='./dataset1/train.yaml', epochs=300, imgsz=640, batch=32, device=0)
+model.train(data='./dataset1/train.yaml', epochs=300, imgsz=640, batch=32, device='cpu')
 print("训练完成")
