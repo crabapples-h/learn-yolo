@@ -9,5 +9,5 @@ yolo = YOLO('models/yolov8n.pt')
 # batch: 批次大小
 # device: 使用设备 0:GPU 'cpu':CPU
 
-yolo.train(data='train.yaml', epochs=200, imgsz=640,batch=32,device='cpu')
+yolo.train(data='./dataset/train.yaml', epochs=200, imgsz=640,batch=32,device='cpu')
 print("训练完成")
