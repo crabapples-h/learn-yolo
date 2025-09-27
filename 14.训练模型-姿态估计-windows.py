@@ -11,7 +11,7 @@ model = YOLO('yolov8n-pose.pt')
 
 # 3080优化配置
 model.train(
-    data='./dataset/train.yaml',
+    data='./dataset_tiger/train.yaml',
     epochs=300,
     imgsz=640,  # 3080可以处理原尺寸
     batch=8,  # 根据12GB内存调整
