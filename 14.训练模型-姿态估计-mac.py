@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import torch
 
 # 加载预训练模型
-model = YOLO('models/yolov8n-pose.pt')
+model = YOLO('yolov8n-pose.pt')
 # model = YOLO('models/yolo11x-pose.pt')
 # model = YOLO('models/yolov8n-pose.pt')
 # model = YOLO('runs/pose/train2/weights/last.pt')
@@ -13,7 +13,7 @@ print(f"MPS available: {torch.backends.mps.is_available()}")
 print(f"MPS built: {torch.backends.mps.is_built()}")
 # MPS优化配置
 model.train(data='./dataset1/train.yaml', epochs=300,
-            imgsz=320,  # M2 Pro上建议减小尺寸
+            imgsz=640,  # M2 Pro上建议减小尺寸
             batch=8,  # 根据内存调整
             device='mps',  # 使用Apple Metal Performance Shaders
             workers=2,  # MPS下建议2个worker

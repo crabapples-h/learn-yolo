@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 # 加载预训练模型
-model = YOLO('models/yolov8n-pose.pt')
+model = YOLO('yolov8n-pose.pt')
 # model = YOLO('models/yolo11x-pose.pt')
 # model = YOLO('models/yolov8n-pose.pt')
 # model = YOLO('runs/pose/train2/weights/last.pt')
