@@ -3,7 +3,9 @@ import time
 import cv2
 from ultralytics import YOLO
 
-model = YOLO('./runs/detect/train6/weights/best.pt')
+# model = YOLO('./runs/detect/train6/weights/best.pt')
+model = YOLO('models/best.pt')
+
 # 打开默认摄像头（通常是0）
 cap = cv2.VideoCapture(1)
 # 检查摄像头是否成功打开
