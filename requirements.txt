@@ -5,3 +5,4 @@ pyautogui~=0.9.54
 moviepy~=2.2.1
 torch~=2.8.0
 PyYAML~=6.0.2
+insightface~=0.7.3
