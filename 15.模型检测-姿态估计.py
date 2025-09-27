@@ -6,4 +6,4 @@ from ultralytics import YOLO
 # yolo = YOLO('runs/pose/train/weights/best.pt')
 yolo = YOLO('models/yolo11n-pose.pt')
 # yolo('resources/input.mp4', show=True, save=True)
-yolo.predict('resources/姿态估计-自定义', show=True, save=True)
+yolo.predict('resources/姿态估计-自定义', show=False, save=True)
