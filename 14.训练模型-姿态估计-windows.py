@@ -7,7 +7,7 @@ print(f"GPU数量: {torch.cuda.device_count()}")
 print(f"当前GPU: {torch.cuda.get_device_name(0)}")
 print(f"GPU内存: {torch.cuda.get_device_properties(0).total_memory / 1024 ** 3:.1f} GB")
 
-model = YOLO('yolov8n-pose.pt')
+model = YOLO('yolov8n.pt')
 
 # 3080优化配置
 model.train(
