@@ -4,3 +4,4 @@ yolo
 runs
 models/
 *.pt
+**/*.cache
