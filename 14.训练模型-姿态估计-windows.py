@@ -11,7 +11,7 @@ model = YOLO('yolov8n-pose.pt')
 
 # 3080优化配置
 model.train(
-    data='./dataset1/train.yaml',
+    data='./dataset/train.yaml',
     epochs=300,
     imgsz=640,  # 3080可以处理原尺寸
     batch=8,  # 根据12GB内存调整
@@ -24,11 +24,11 @@ model.train(
     weight_decay=0.0005,
     warmup_epochs=3.0,
 
-    # 重点：大幅调整损失权重
-    pose=10.0,  # 大幅提高姿态损失权重
-    kobj=5.0,  # 提高关键点目标权重
-    box=1.0,  # 降低检测权重（因为检测已经很好）
-    cls=0.3,  # 降低分类权重
+    # # 重点：大幅调整损失权重
+    # pose=10.0,  # 大幅提高姿态损失权重
+    # kobj=5.0,  # 提高关键点目标权重
+    # box=1.0,  # 降低检测权重（因为检测已经很好）
+    # cls=0.3,  # 降低分类权重
 
 
     # 性能优化
