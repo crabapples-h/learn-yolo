@@ -18,28 +18,28 @@ model.train(
     device=0,  # 使用GPU 0
     workers=8,  # 充分利用CPU核心
     patience=50,
-    lr0=0.01,
-    lrf=0.01,
-    momentum=0.937,
-    weight_decay=0.0005,
-    warmup_epochs=3.0,
-
-    # 损失权重调整（重点解决姿态问题）
-    box=7.5,
-    pose=1.5,  # 提高姿态损失权重
-    kobj=2.0,  # 提高关键点目标权重
-    cls=1.0,
-
-    # 性能优化
-    amp=True,  # 自动混合精度训练
-    cos_lr=True,  # 余弦学习率调度
-    close_mosaic=10,  # 最后10epoch关闭马赛克增强
-
-    # 数据增强
-    hsv_h=0.015,
-    hsv_s=0.7,
-    hsv_v=0.4,
-    fliplr=0.5,  # 水平翻转对姿态很重要
+    # lr0=0.01,
+    # lrf=0.01,
+    # momentum=0.937,
+    # weight_decay=0.0005,
+    # warmup_epochs=3.0,
+    #
+    # # 损失权重调整（重点解决姿态问题）
+    # box=7.5,
+    # pose=1.5,  # 提高姿态损失权重
+    # kobj=2.0,  # 提高关键点目标权重
+    # cls=1.0,
+    #
+    # # 性能优化
+    # amp=True,  # 自动混合精度训练
+    # cos_lr=True,  # 余弦学习率调度
+    # close_mosaic=10,  # 最后10epoch关闭马赛克增强
+    #
+    # # 数据增强
+    # hsv_h=0.015,
+    # hsv_s=0.7,
+    # hsv_v=0.4,
+    # fliplr=0.5,  # 水平翻转对姿态很重要
 
     save=True,
     exist_ok=True,
